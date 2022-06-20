@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Gen</title>
+    
+  <link rel="stylesheet" href="./assets/index.19e88954.css">
+</head>
+
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white md:max-w-[700px] m-auto">
+    <div class="md:bg-gradient-to-r from-blue-500 to-cyan-500 md:mt-20 md:p-5 md:rounded-xl">
+        <header class="px-5">
+            <img src="./assets/NHCLogo.e9586808.png" alt="IT Club Logo" class="w-52 m-auto pt-5 pb-5">
+            <h1 class="text-3xl text-center font-semibold">IT Club</h1>
+            <h3 class="text-xl">Admin page</h3>
+            <h4 class="pt-10 text-center text-xl">Get certificate of participants</h4>
+        </header>
+        <main class="text-center pt-5">
+
+
+            <label for="name" class="text-xl">Type Participant Name</label> <br>
+            <input required type="text" name="Name" autocomplete="name" placeholder="Enter Name" id="name" minlength="3"
+                maxlength="16" class="h-10 w-[80%] px-5 text-black rounded-md mt-1"> <br>
+            <button type="button" id="submitBtn"
+                class="bg-gradient-to-r hover:from-blue-500 hover:to-cyan-400 from-pink-500 to-yellow-500 p-2 rounded-md my-2 font-semibold">Get
+                Certificate</button>
+            <p>( or )</p>
+            <input type='file' accept='text/plain' onchange='openFile(event)'
+                class="block w-fit text-sm text-gray-900 bg-gray-50 border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 m-auto file:h-10 file:rounded-lg file:border-none file:bg-blue-500 file:text-white file:text-base file:px-2 p-2 rounded-xl my-2">
+            <button id="Gen" class="bg-gradient-to-r hover:from-blue-500 hover:to-cyan-400 from-pink-500 to-yellow-500 p-2 rounded-md my-2 font-semibold">Gen Multi Certificats</button>
+        </main>
+        <p class="text-center pt-20 font-semibold">&copy; Balaji GV 2022</p>
+
+
+    </div>
+    <p></p>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./index.js"></script>
+    <!-- <script>
+        
+    </script> -->
+</body>
+
+</html>
